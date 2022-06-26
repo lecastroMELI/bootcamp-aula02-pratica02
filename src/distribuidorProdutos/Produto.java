@@ -11,10 +11,10 @@ package distribuidorProdutos;
     multiplicar o preço pela quantidade de produtos passados.*/
 
 public class Produto {
-    String name;
-    double price;
+    protected String name;
+    protected double price;
 
-    Produto(String name, int price) {
+    Produto(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -31,7 +31,7 @@ public class Produto {
         this.name = name;
     }
 
-    public void  setPrice(int price) {
+    public void  setPrice(double price) {
         this.price = price;
     }
 
